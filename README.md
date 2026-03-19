@@ -1,45 +1,51 @@
-# Outer Wilds planet creation template
- A template project for adding planets to Outer Wilds with [New Horizons](https://github.com/xen-42/outer-wilds-new-horizons).
 
-The source code for the dll used is [here](https://github.com/xen-42/ow-new-horizons-mod-template).
+# Kawasaki Ninja Mod for Outer Wilds
 
-## Prerequisites
-- Outer Wilds Mod Manager (get it from the [Outer Wilds Mods](https://outerwildsmods.com/) website)
-- OWML installed in the Mod Manager
-- A GitHub account (required for forking the repo and for releasing your mod to the public)
+Adds a "rideable" Kawasaki Ninja ZX-6R to the Game on the Launch Platform next to the ship. Sadly it is only a carryable 3d Model as of now, I could not figure out how to attach custom Sound Effects to it.
 
-## How to use this template
 
-### **DO NOT FORK THIS REPOSITORY!**
+## Screenshots
 
-1. Generate your repository from this template (click on Use This Template above).
+![App Screenshot](https://cdn.discordapp.com/attachments/1183699979735408700/1484230557432021103/image.png?ex=69bd78ec&is=69bc276c&hm=6b139b6245edf4399851dd0f06952b10e120d69243e1b30643493161a5725f13&)
 
-2. Clone your repository to your machine into a new folder in OWML's `Mods` folder. Name this folder [your name].[your unique mod ID]. More on this later. You can use GitHub desktop for this, then click the green "Code" dropdown and select open with GitHub Desktop.
+![App Screenshot](https://cdn.discordapp.com/attachments/1183699979735408700/1484230007541993702/image.png?ex=69bd7869&is=69bc26e9&hm=4686140466e7765a7e5e7af2eadfa57fe278cf1c145598096a8b9ea65aceedf9&)
 
-3. Follow the instructions in [Outer Wilds New Horizons](https://nh.outerwildsmods.com/) on how to create planet config files. Place your config files into the `planets` folder in [your name].[your unique mod ID]. You can delete the `example_config` file in there while you're at it. When you're done you can commit the changes to your repo.
+## Installation
 
-4. Edit `NewHorizonsTemplate/manifest.json`. It will look like this:
+- In my GitHub Repo https://github.com/AlexRacing07/Ninja-Mod press the Code Button and Download the ZIP.
 
-```json
-{
-  "filename": "NewHorizonsConfig.dll", 
-  "author": "[your name]",
-  "name": "[your readable mod name]",
-  "uniqueName": "[your name].[your unique mod ID]",
-  "version": "0.1.0",
-  "owmlVersion": "2.7.2",
-  "dependencies": [ "xen.NewHorizons" ]
-}
-```
+- Go to %AppData%\OuterWildsModManager\OWML\Mods and create a Folder called DordMord.NinjaMod, then Unpack the downloaded ZIP into this Folder. This is the Default Location of the Mods Folder. If you decided to install your Mods somewhere else, put it there.
 
-- Replace `[your name]` with how you want your name to appear in the mod database.
-- Replace `[your readable mod name]` with how you want your mod to appear in the database.
-- Replace `[your unique mod ID]` with whatever you want, as long as it isn't already in use by another mod. Adding `[your name]` as a prefix helps to prevent overlaps but isn't required.
+- In the Outer Wilds Mod Manager enable my Mod called Kawasaki Ninja Mod, it should automatically download and enable other dependencies like New Horizons and Vanilla Fixes by itself.
 
-5. Edit the `README.md` file (you can do this on GitHub in your browser) and be sure to add some nice pictures of your planets.
+- Launch the Game and have fun with your Ninja!
 
-6. Select "Read and Write Permissions" under the `Actions > General` section of the repository settings![image](https://user-images.githubusercontent.com/25644444/168451761-43d3a0e7-c9a2-4f7f-b942-9aa7d5c3c793.png)
+## Support
 
-7. Releasing your mod: Be sure to try out the mod by adding it to your OWML mods folder and make sure it works in game before releasing. When you zip your final mod be sure to exclude the README.md file and the config.json file (they aren't needed in the release). When using the template when you update the manifest version from 0.0.0 to 0.1.0 or whatever you want, it will automatically make a new release. To make your mod show up in the Mod Manager and in [outerwildsmods.com](https://outerwildsmods.com), you need to add it to the database. [Click here to request for your mod to be added to the database](https://github.com/ow-mods/ow-mod-db/issues/new?labels=add-mod&template=add-mod.yml&title=%5BYour+mod+name+here%5D). Learn more about the Outer Wilds Mod Database in the [ow-mod-db repository](https://github.com/ow-mods/ow-mod-db).
+If you found a Bug that you would like fixed or are knowledgable in Outer Wilds Modding and have an Idea on how I could implement Sound Effects like Starting the Engine and revving into the Mod, contact me on Discord: dord_4
 
-8. Updating your mod. You can make any changes to your mod on your computer. Then from Github desktop you can commit and then push those changes to your repo online. When you are ready to release the new version of your mod, just changed the version number in `manifest.json`. Once the `manifest.json` version number is increased and pushed, a new release will automatically be created. 
+## License
+
+MIT License
+
+Copyright (c) 2026 DordMord
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
