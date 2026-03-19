@@ -12,7 +12,7 @@ Adds a "rideable" Kawasaki Ninja ZX-6R to the Game on the Launch Platform next t
 
 ## Installation
 
-- In my GitHub Repo https://github.com/AlexRacing07/Ninja-Mod press the Code Button and Download the ZIP.
+- In my GitHub Repo https://github.com/AlexRacing07/Ninja-Mod go to releases and download the newest version, or press the Code Button and Download the ZIP.
 
 - Go to %AppData%\OuterWildsModManager\OWML\Mods and create a Folder called DordMord.NinjaMod, then Unpack the downloaded ZIP into this Folder. This is the Default Location of the Mods Folder. If you decided to install your Mods somewhere else, put it there.
 
